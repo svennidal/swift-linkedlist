@@ -1,8 +1,8 @@
-enum QueueError: ErrorType {
-	case EmptyQueue
+enum StackError: ErrorType {
+	case EmptyStack
 }
 
-class Queue {
+class Stack {
 	var head: Node?
 	init() {
 		self.head = nil
@@ -61,7 +61,7 @@ class Queue {
 			}
 			return (value)!
 		} else {
-			throw QueueError.EmptyQueue
+			throw StackError.EmptyStack
 		}
 	}
 
